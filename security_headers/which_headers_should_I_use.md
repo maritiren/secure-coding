@@ -8,7 +8,6 @@ API project is an easy way of getting lots of security. However, a question that
 [This question](https://security.stackexchange.com/questions/147554/security-headers-for-a-web-api) 
 on StackExchange hade some good answers:
 
-```
 Checking headers off a list is not the best technique to assert a site's security. Services 
 like securityheaders.io can point you in the right direction but all they do is compare against 
 a list of proposed settings without any context about your application. Consequently, some of 
@@ -20,28 +19,28 @@ to your site via HTTPS after their first visit and until the max-age timeout is 
 thereby preventing downgrade attacks. Even an API endpoint should be secured with SSL, so keep 
 that header.
 
-Access-Control-Allow-Methods: GET, POST, OPTIONS is not a security option per se. If your API 
+**Access-Control-Allow-Methods**: GET, POST, OPTIONS is not a security option per se. If your API 
 works via CORS preflight requests you need to decide which methods you allow for cross-origin 
 sites to use. Disabling CORS could make your API unavailable. If that particular setting is 
 sensible depends on your implementation.
 
-*X-XSS-Protection*: 1; mode=block can be good adivice for regular sites because it instructs the 
+**X-XSS-Protection**: 1; mode=block can be good adivice for regular sites because it instructs the 
 XSS Auditor (which is implemented in WebKit browsers but not Firefox) to not render the site when 
 it detects a reflected XSS attempt. But for an API that just provides JSON responses and doesn't 
 serve active content, this header doesn't bring any benefit.
 
-X-Content-Type-Options: nosniff prevents browsers from making assumptions about the content type 
+**X-Content-Type-Options**: nosniff prevents browsers from making assumptions about the content type 
 if the site didn't declare the type correctly. If you're running a JSON API you should serve the 
 responses with Content-Type: application/json. If you do that correctly there will be no need to 
 add the nosniff directive.
 
-X-Frame-Options: Deny prevents any website from embedding your site in an HTML frame. That option 
+**X-Frame-Options**: Deny prevents any website from embedding your site in an HTML frame. That option 
 stops clickjacking attacks where an attacker tricks users into interacting with your website 
 through a disguised frame. But without interactive elements there is limited risk through cross-origin 
 framing. Yet, as there are advanced attacks involving dragging content out of the frame which could 
 disclose JSON responses, you might still want to leave that header there.
 
-Content-Security-Policy headers control what kind of content from what origin your site is allowed 
+**Content-Security-Policy** headers control what kind of content from what origin your site is allowed 
 to interact with (scripts, stylesheets, images, etc.). Your setting "script-src 'self' means that 
 only scripts from the same origin may be loaded. A CSP is useful for regular sites but doesn't make 
 sense for your API endpoint because you don't serve any active content that could be controlled by 
@@ -49,4 +48,3 @@ the CSP.
 
 The Server header specifies information about the server and the software running on it. It's often 
 advised to not send that header at all to not disclose anything about backend software and versions.
-```
