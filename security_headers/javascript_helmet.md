@@ -49,7 +49,6 @@ app.use(csp({
   browserSniff: true
 }))
 
-app.set('port', process.env.PORT || 8000)
 app.disable('x-powered-by')
 app.disable('server')
 ```
