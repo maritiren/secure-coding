@@ -48,3 +48,23 @@ the CSP.
 
 The Server header specifies information about the server and the software running on it. It's often 
 advised to not send that header at all to not disclose anything about backend software and versions.
+
+---
+
+## TL;DR
+So as a summary, we may say that you may consider having the following security headers for you system:
+### API
+* Strict-Transport-Security (HSTS)
+* Access-Control-Allow-Methods: Define the options you allow
+* X-Content-Type-Options: nosniff (not necessary if you serve responses with what type of content you
+are sending, e.g. `Content-Type: application/json`. So make sure to do that!
+* X-Frame-Options: Usually thought of for web apps as it stops clickjacking, but is useful for API's
+as well. `Yet, as there are advanced attacks involving dragging content out of the frame which could disclose JSON responses, you might still want to leave that header there.`
+
+### Web application
+* Strict-Transport-Security (HSTS)
+* Access-Control-Allow-Methods: Define the options you allow
+* X-XSS-Protection
+* X-Content-Type-Options: nosniff
+* X-Frame-Options
+* Content-Security-Policy (CSP)
