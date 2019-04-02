@@ -15,7 +15,7 @@ a list of proposed settings without any context about your application. Conseque
 the proposals wont't have any impact on the security of an API endpoint that serves nothing but 
 JSON responses.
 
-Strict-Transport-Security makes sense because it guarantees that users will directly connect 
+**Strict-Transport-Security** makes sense because it guarantees that users will directly connect 
 to your site via HTTPS after their first visit and until the max-age timeout is reached - 
 thereby preventing downgrade attacks. Even an API endpoint should be secured with SSL, so keep 
 that header.
@@ -25,7 +25,7 @@ works via CORS preflight requests you need to decide which methods you allow for
 sites to use. Disabling CORS could make your API unavailable. If that particular setting is 
 sensible depends on your implementation.
 
-X-XSS-Protection: 1; mode=block can be good adivice for regular sites because it instructs the 
+*X-XSS-Protection*: 1; mode=block can be good adivice for regular sites because it instructs the 
 XSS Auditor (which is implemented in WebKit browsers but not Firefox) to not render the site when 
 it detects a reflected XSS attempt. But for an API that just provides JSON responses and doesn't 
 serve active content, this header doesn't bring any benefit.
