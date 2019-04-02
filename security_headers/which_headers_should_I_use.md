@@ -68,3 +68,7 @@ as well. `Yet, as there are advanced attacks involving dragging content out of t
 * X-Content-Type-Options: nosniff
 * X-Frame-Options
 * Content-Security-Policy (CSP)
+
+### NOTE!
+In order to not disclose information about you project, you should avoid adding the `X-Powered-By` 
+and `Server` headers.
