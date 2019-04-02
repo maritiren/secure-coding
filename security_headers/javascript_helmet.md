@@ -1,4 +1,10 @@
-# Implementation of security headers in JavaScript
+# Examples of security headers in a JavaScript web application
+
+This is an example of implementing security headers in a Javascript application using
+Node.js and Express. This code should be put in the server file. 
+
+Note that the security headers need to be configured according to how your system works,
+so this snippet might not work in your web application. 
 
 ```
 import helmet from 'helmet'
