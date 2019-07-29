@@ -10,7 +10,7 @@ API project is an easy way of getting lots of security. However, a question that
 ## TL;DR
 So as a summary, we may say that you should consider including the following security headers in your system:
 ### API
-* Strict-Transport-Security (HSTS)
+* Strict-Transport-Security (HSTS): `Strict-Transport-Security: max-age=31536000; includeSubDomains`
 * Access-Control-Allow-Methods: Define the options you allow
 * X-Content-Type-Options: nosniff (not necessary if you serve responses with what type of content you
 are sending, e.g. `Content-Type: application/json`. So make sure to do that!
@@ -18,7 +18,7 @@ are sending, e.g. `Content-Type: application/json`. So make sure to do that!
 as well. `Yet, as there are advanced attacks involving dragging content out of the frame which could disclose JSON responses, you might still want to leave that header there.`
 
 ### Web application
-* Strict-Transport-Security (HSTS)
+* Strict-Transport-Security (HSTS): `Strict-Transport-Security: max-age=31536000; includeSubDomains`
 * Access-Control-Allow-Methods: Define the options you allow
 * X-XSS-Protection
 * X-Content-Type-Options: nosniff
