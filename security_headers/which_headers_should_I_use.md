@@ -37,7 +37,7 @@ Therefore, it is recommended to make a separate service just for handling them.
 ---
 
 [This question](https://security.stackexchange.com/questions/147554/security-headers-for-a-web-api) 
-on StackExchange hade some good answers:
+on StackExchange had some good answers:
 
 Checking headers off a list is not the best technique to assert a site's security. Services 
 like securityheaders.io can point you in the right direction but all they do is compare against 
