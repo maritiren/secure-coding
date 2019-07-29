@@ -5,6 +5,37 @@ API project is an easy way of getting lots of security. However, a question that
 
 `Which security header should I use for my [web app/API]?`
 
+---
+
+## TL;DR
+So as a summary, we may say that you should consider including the following security headers in your system:
+### API
+* Strict-Transport-Security (HSTS)
+* Access-Control-Allow-Methods: Define the options you allow
+* X-Content-Type-Options: nosniff (not necessary if you serve responses with what type of content you
+are sending, e.g. `Content-Type: application/json`. So make sure to do that!
+* X-Frame-Options: Usually thought of for web apps as it stops clickjacking, but is useful for API's
+as well. `Yet, as there are advanced attacks involving dragging content out of the frame which could disclose JSON responses, you might still want to leave that header there.`
+
+### Web application
+* Strict-Transport-Security (HSTS)
+* Access-Control-Allow-Methods: Define the options you allow
+* X-XSS-Protection
+* X-Content-Type-Options: nosniff
+* X-Frame-Options
+* Content-Security-Policy (CSP)
+
+### NOTE!
+In order to not disclose information about you project, you should avoid adding the `X-Powered-By` 
+and `Server` headers.
+
+### Tips
+Content Security Policy (CSP) is the security header that might take the longest to implement, 
+as all CSP violation should be logged. CSP violations may easily DOS the system receiving them.
+Therefore, it is recommended to make a separate service just for handling them. 
+
+---
+
 [This question](https://security.stackexchange.com/questions/147554/security-headers-for-a-web-api) 
 on StackExchange hade some good answers:
 
@@ -14,10 +45,10 @@ a list of proposed settings without any context about your application. Conseque
 the proposals wont't have any impact on the security of an API endpoint that serves nothing but 
 JSON responses.
 
-**Strict-Transport-Security** makes sense because it guarantees that users will directly connect 
+**Strict-Transport-Security (HSTS)** makes sense because it guarantees that users will directly connect 
 to your site via HTTPS after their first visit and until the max-age timeout is reached - 
 thereby preventing downgrade attacks. Even an API endpoint should be secured with SSL, so keep 
-that header.
+that header. Read more about HSTS [here](https://news.netcraft.com/archives/2016/03/17/95-of-https-servers-vulnerable-to-trivial-mitm-attacks.html).
 
 **Access-Control-Allow-Methods**: GET, POST, OPTIONS is not a security option per se. If your API 
 works via CORS preflight requests you need to decide which methods you allow for cross-origin 
@@ -48,27 +79,3 @@ the CSP.
 
 The Server header specifies information about the server and the software running on it. It's often 
 advised to not send that header at all to not disclose anything about backend software and versions.
-
----
-
-## TL;DR
-So as a summary, we may say that you may consider having the following security headers for you system:
-### API
-* Strict-Transport-Security (HSTS)
-* Access-Control-Allow-Methods: Define the options you allow
-* X-Content-Type-Options: nosniff (not necessary if you serve responses with what type of content you
-are sending, e.g. `Content-Type: application/json`. So make sure to do that!
-* X-Frame-Options: Usually thought of for web apps as it stops clickjacking, but is useful for API's
-as well. `Yet, as there are advanced attacks involving dragging content out of the frame which could disclose JSON responses, you might still want to leave that header there.`
-
-### Web application
-* Strict-Transport-Security (HSTS)
-* Access-Control-Allow-Methods: Define the options you allow
-* X-XSS-Protection
-* X-Content-Type-Options: nosniff
-* X-Frame-Options
-* Content-Security-Policy (CSP)
-
-### NOTE!
-In order to not disclose information about you project, you should avoid adding the `X-Powered-By` 
-and `Server` headers.
