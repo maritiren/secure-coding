@@ -5,6 +5,8 @@ with the contents of this file:
 
 * [Secure Code Warrior](#secure-code-warrior)
 * [OWASP Secure Coding Dojo](#owasp-secure-coding-dojo)
+* [OWASP Juice Shop](#owasp-juice-shop)
+* [PentesterLab](#pentesterlab)
 
 ---
 
