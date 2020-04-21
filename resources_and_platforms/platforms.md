@@ -66,3 +66,17 @@ at the official companion guide. The same information may be found in the
 README of the [GitHub page](https://github.com/bkimminich/juice-shop).
 
 
+## PentesterLab
+[PentesterLab](https://pentesterlab.com/) has a set of both free and paid 
+exercises to 
+
+Excercises that seem relevant for developers (from free verison):
+* [Introduction to code review](https://pentesterlab.com/exercises/codereview/course)
+* [Play Session Injection](https://pentesterlab.com/exercises/play_session_injection/course)
+* [Play XML Entities](https://pentesterlab.com/exercises/play_xxe/course)
+* [XSS and MySQL FILE](https://pentesterlab.com/exercises/xss_and_mysql_file/course)
+
+All free excersises may be found [here](https://pentesterlab.com/exercises?dir=desc&only=free&sort=published_at).
+**Work in progress - I haven't actually tested these yet**
+
+
