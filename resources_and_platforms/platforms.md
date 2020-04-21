@@ -8,6 +8,7 @@ with the contents of this file:
 
 ---
 
+
 ## Secure Code Warrior
 [Secure Code Warrior](https://securecodewarrior.com/) is a platform that has 
 several modes such as `training`, `tournament` and `assessment`.
@@ -15,6 +16,10 @@ several modes such as `training`, `tournament` and `assessment`.
 The platform is free for 21 days. It seems to be made for enterprise, but they 
 might appear at university events as well, or may do some deals with some unis
 as far as I understand.
+
+### Prerequisites:
+None :O
+
 
 ## OWASP Secure Coding Dojo
 OWASP plays an important role for secure coding. OWASP is short for the Open 
@@ -30,7 +35,18 @@ to your development project!
 Oh, I got a little carried away. OWASP also provides us with several platforms 
 for practicing secure coding. One of them is [OWASP Secure Coding Dojo](https://owasp.org/www-project-secure-coding-dojo/).
 
-When setting up the Secure Coding Dojo, 
+### Prerequisites:
+* [Docker](https://docs.docker.com/get-docker/)
+* [Docker Compose](https://docs.docker.com/compose/install/)
+
+To set up this platform, you must add an environment variable called `DATA_DIR`.
+If you run on Linux, want to run the platform without adding the environment 
+variable to the profile file of your favorite shell, and have to run sudo in 
+order du run Docker Compose, then you can add the env variable like this:
+```
+sudo env DATA_DIR="/path/to/you/data_dir/" docker-compose up
+```
+
 
 ## OWASP Juice Shop
 There is some information about OWASP and some nice resources you should check
