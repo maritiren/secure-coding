@@ -33,11 +33,14 @@ Paths:
 * [Application Security on Microsoft Azure](https://app.pluralsight.com/paths/skills/application-security-on-microsoft-azure)
 *
 
-Courses:
+Courses or videos:
 As I personally haven't watched any of these yet, I cannot recommend any. I do
 however like Pluralsight courses a lot and I am pretty sure those at the bottom
 of [this page](https://www.pluralsight.com/browse/information-cyber-security/secure-by-design)
 should be nice to get to learn some things about secure coding.
+
+* [This video](https://app.pluralsight.com/library/courses/play-by-play-owasp-top-ten-2017) is nice to get an update of OWASP Top 10 2017.
+
 
 ---
 
