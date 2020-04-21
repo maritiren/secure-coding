@@ -39,3 +39,25 @@ however like Pluralsight courses a lot and I am pretty sure those at the bottom
 of [this page](https://www.pluralsight.com/browse/information-cyber-security/secure-by-design)
 should be nice to get to learn some things about secure coding.
 
+---
+
+# Norwegian Resources
+
+* [Datatilsynet](#datatilsynet)
+
+## Datatilsynet
+Inneholder applikasjonen du er med å utvikle personopplysninger? Da bør 
+prosjektet ditt følge 
+[datatilsynets](https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/innebygd-personvern/programvareutvikling-med-innebygd-personvern/innledning/)
+veiledning for å inkludere fokus på personvern som en del av 
+utviklingsprosessen!
+
+Veilederen inneholder syv nyttige faser for å følge 
+"privacy-by-design"-prinsippet. Guiden finnes også på engelsk.
+
+Det kan også være nyttig å lese om [personvernsprinsippene](https://www.datatilsynet.no/rettigheter-og-plikter/personvernprinsippene/). 
+
+TIPS: Henger prosjektet ditt opp masse ting på veggene? Eller trenger dere å 
+freshe opp med noe fancy? Heng opp plakaten med informasjon om de syv fasene i 
+utviklingsprosessen for innebygd personvern B-) Den finnes også på engelsk.
+
