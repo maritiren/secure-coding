@@ -51,7 +51,7 @@ of the wiki.
 * [Docker](https://docs.docker.com/get-docker/)
 * [Docker Compose](https://docs.docker.com/compose/install/)
 * Or, someone hosted it for you in which you only need to be connected to a 
-network. 
+network and go to their website. 
 
 
 ### Setup
@@ -67,8 +67,14 @@ order du run Docker Compose, then you can add the env variable like this:
 sudo env DATA_DIR="/path/to/you/data_dir/" docker-compose up
 ```
 
-Or, someone has set it up for you. All instructions for hosting in cloud and 
-configuring are on the [wiki](https://github.com/trendmicro/SecureCodingDojo/wiki/Deploying-with-Docker)
+### Getting started
+1. Go to website, e.g. http://localhost:8081.
+2. Click the `Login` button in the top right corner. Now click the `Register`
+button.
+3. Log in with the registered username and password. 
+4. Press the yellow bar to make a team.
+5. ... and you can start with the module of your liking!
+
 
 ---
 
