@@ -29,11 +29,10 @@ None :O
 OWASP plays an important role for secure coding. OWASP is short for the Open 
 Web Application Security project. If you haven't heard about it, you should 
 head over to the [resources page](../resources.md) and read the OWASP section.
-
 OWASP also provides us with several platforms for practicing secure coding. One 
 of them is [OWASP Secure Coding Dojo](https://owasp.org/www-project-secure-coding-dojo/). You should read the GitHub repository [wiki page](https://github.com/trendmicro/SecureCodingDojo/wiki).
 
-The authors describe teh platform as follows:
+The authors describe the platform as follows:
 ```
 In other training sites or CTFs there is a puzzle aspect to the challenges 
 which is great for pen-tester audiences but can make some developers lose 
