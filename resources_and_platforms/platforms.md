@@ -22,24 +22,43 @@ as far as I understand.
 ### Prerequisites:
 None :O
 
+---
+
 
 ## OWASP Secure Coding Dojo
 OWASP plays an important role for secure coding. OWASP is short for the Open 
-Web Application Security project. If you haven't heard about it,
-you should definitely read about [OWASP Top 10](https://owasp.org/www-project-top-ten/)
-which lists the ten most found vulnerabilities in a bunch of applications from 
-the recent years. This list is a good resource of common vulnerabilities to 
-prevent introducing to your application. Also, I would really recommmend to 
-read about [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/www-project-application-security-verification-standard/)
-as well, as it contains a list of requirements that you might want to include 
-to your development project!
+Web Application Security project. If you haven't heard about it, you should 
+head over to the [resources page](../resources.md) and read the OWASP section.
 
-Oh, I got a little carried away. OWASP also provides us with several platforms 
-for practicing secure coding. One of them is [OWASP Secure Coding Dojo](https://owasp.org/www-project-secure-coding-dojo/).
+OWASP also provides us with several platforms for practicing secure coding. One 
+of them is [OWASP Secure Coding Dojo](https://owasp.org/www-project-secure-coding-dojo/). You should read the GitHub repository [wiki page](https://github.com/trendmicro/SecureCodingDojo/wiki).
+
+The authors describe teh platform as follows:
+```
+In other training sites or CTFs there is a puzzle aspect to the challenges 
+which is great for pen-tester audiences but can make some developers lose 
+interest. In the Secure Coding Dojo the focus is on demonstrating the 
+vulnerability.
+```
+
+The platform consists of three training applications (this information is 
+copied from the [Home page](https://github.com/trendmicro/SecureCodingDojo/wiki)
+of the wiki. 
+* "Insecure.Inc" is a Java site that demonstrates simple exploits based on SANS Top 25/OWASP Top 10
+* "Hacker's Den" is a Serverless application for more advanced users based on OWASP Top 10
+* "Security Code Review 101" is a static web site that runs directly from the Dojo Github
 
 ### Prerequisites:
 * [Docker](https://docs.docker.com/get-docker/)
 * [Docker Compose](https://docs.docker.com/compose/install/)
+* Or, someone hosted it for you in which you only need to be connected to a 
+network. 
+
+
+### Setup
+Follow the guide in the first section "Basic Setup Instruction" of 
+[Deploying with Docker](https://github.com/trendmicro/SecureCodingDojo/wiki/Deploying-with-Docker)
+for a local setup.
 
 To set up this platform, you must add an environment variable called `DATA_DIR`.
 If you run on Linux, want to run the platform without adding the environment 
@@ -48,6 +67,11 @@ order du run Docker Compose, then you can add the env variable like this:
 ```
 sudo env DATA_DIR="/path/to/you/data_dir/" docker-compose up
 ```
+
+Or, someone has set it up for you. All instructions for hosting in cloud and 
+configuring are on the [wiki](https://github.com/trendmicro/SecureCodingDojo/wiki/Deploying-with-Docker)
+
+---
 
 
 ## OWASP Juice Shop
