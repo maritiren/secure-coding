@@ -76,7 +76,7 @@ button.
 5. ... and you can start with the module of your liking!
 
 I would advice you to google and do research around each challenge for broader
-understanding of each topic.
+understanding of each topic. Instead of guessing at challenges. 
 
 
 ---
