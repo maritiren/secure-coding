@@ -64,7 +64,7 @@ If you run on Linux, want to run the platform without adding the environment
 variable to the profile file of your favorite shell, and have to run sudo in 
 order du run Docker Compose, then you can add the env variable like this:
 ```
-sudo env DATA_DIR="/path/to/you/data_dir/" docker-compose up
+sudo env DATA_DIR="/path/to/your/data_dir/" docker-compose up
 ```
 
 ### Getting started
@@ -76,7 +76,9 @@ button.
 5. ... and you can start with the module of your liking!
 
 I would advice you to google and do research around each challenge for broader
-understanding of each topic. Instead of guessing at challenges. 
+understanding of each topic. Instead of guessing at challenges. Also, I started
+with the Code Review 101 module and found that a good start of the Secure Coding
+Dojo.
 
 
 ---
