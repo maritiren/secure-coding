@@ -56,7 +56,7 @@ prevent complexity, duplication of code and can make the code easier to read.
 ## Grep for bugs
 To find low-hanging fruits, grepping after known vulnerable functions or other
 patterns might help disclose vulnerable code. The snippet below shows how to 
-grep for usage of the `system` function:
+grep for usage of the `system` function in PHP:
 ```
 $ grep -R 'system\(\$_' *
 ```
