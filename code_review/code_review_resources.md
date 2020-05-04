@@ -54,6 +54,14 @@ prevent a couple of these bullet point. E.g. linting tools. Linting tools can
 prevent complexity, duplication of code and can make the code easier to read.
 
 ## Grep for bugs
+To find low-hanging fruits, grepping after known vulnerable functions or other
+patterns might help disclose vulnerable code. The snippet below shows how to 
+grep for usage of the `system` function:
+```
+$ grep -R 'system\(\$_' *
+```
+
+Other resources: 
 * [GRaudit](https://github.com/wireghoul/graudit): "graudit is a simple script 
 and signature sets that allows you to find potential security flaws in source 
 code using the GNU utility grep. It's comparable to other static analysis 
