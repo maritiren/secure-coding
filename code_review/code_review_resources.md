@@ -140,6 +140,14 @@ $ graudit -d /path/to/graudit/signatures/js.db .
 ./classes/user.php-73-    if ($result) {
 ```
 
+Seems like it is not possible to insert several databases to graudit. From my
+tries, it looks like it processes the latter one if each are added with the 
+`-d` flag. While if you add all databases after one `-d` flag, it will parse
+the databases as files to audit. 
+
+Note to self: Could be nice with a list of insecure functions for each language 
+as well.
+
 Resources: 
 * [GRaudit](https://github.com/wireghoul/graudit): "graudit is a simple script 
 and signature sets that allows you to find potential security flaws in source 
