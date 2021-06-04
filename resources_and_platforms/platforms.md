@@ -3,12 +3,21 @@
 In this file platforms for secure coding practice are listed. Here is a table
 with the contents of this file:
 
+* [PortSwigger Web Security Academy](#portswigger-web-security-academy)
 * [Secure Code Warrior](#secure-code-warrior)
 * [OWASP Secure Coding Dojo](#owasp-secure-coding-dojo)
 * [OWASP Juice Shop](#owasp-juice-shop)
 * [PentesterLab](#pentesterlab)
+* [Kubernetes Goat](#kubernetes-goat)
+* [CTF labs](#ctf-labs)
 
 ---
+
+## Portswigger Web Security Academy
+[Web Security Academy](https://portswigger.net/web-security) is my personal
+favorite out of all these. It is from the attacker perspective, not coding 
+perspective. However, the resources are well written and there are hints if 
+you get stuck on a lab.
 
 
 ## Secure Code Warrior
@@ -115,4 +124,16 @@ Excercises that seem relevant for developers (from free verison):
 All free excersises may be found [here](https://pentesterlab.com/exercises?dir=desc&only=free&sort=published_at).
 **Work in progress - I haven't actually tested these yet**
 
+
+## Kubernetes Goat
+[Kubernetes Goat](https://github.com/madhuakula/kubernetes-goat) can both be
+setup locally and run through [Katacoda](https://katacoda.com/madhuakula/scenarios/kubernetes-goat).
+
+
+## CTF labs
+Here is a list of CTF labs:
+
+* [PicoCTF](https://play.picoctf.org/)
+* [CTFLearn](https://ctflearn.com/)
+* [Cyber Talents](https://cybertalents.com/)
 
